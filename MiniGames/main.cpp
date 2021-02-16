@@ -1,5 +1,6 @@
 
 #include "main.h"
+#include "TicTacToe.h"
 
 int main()
 {
@@ -15,7 +16,7 @@ void mainMenu()
 {
 	displayText("mainmenu.txt");
 	
-	int choice = askForNumber("\nPlease enter your option: ",0,2);
+	int choice = askForNumber("\nPlease enter your option: ",0,3);
 
 	switch (choice)
 	{
@@ -33,6 +34,9 @@ void mainMenu()
 		mainMenu();
 		break;
 		
+	case 3:
+		cout << "\nThank you for playing with ruri and rubi~! See you soon~!\n\n";
+		break;
 	}
 
 }
@@ -42,13 +46,33 @@ void singleMenu()
 {
 	displayText("singleMenu.txt");
 
-	int choice = askForNumber("\nPlease select a game: ", 0, 3);
+	int playerNum = 1;
+
+	int choice = askForNumber("Please select a game: ", 0, 3);
 
 	switch (choice)
+	{
+	case 0:
+		waitForPlayer();
+		mainMenu();
+		break;
+	}
 }
 
 
 void multiMenu()
 {
 	displayText("multiMenu.txt");
+
+	int playerNum = 2;
+
+	int choice = askForNumber("Please select a game: ", 0, 3);
+
+	switch (choice)
+	{
+	case 0:
+		waitForPlayer();
+		mainMenu();
+		break;
+	}
 }

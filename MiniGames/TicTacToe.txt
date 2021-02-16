@@ -1,0 +1,19 @@
+************************************************************
+ Noughts and Crosses Game (Tic-Tac-Toe)
+************************************************************
+This little nugget of a game has been around for a very
+long time ... it's simple to play and passes the time!
+The game is played in a series of turns. Your objective
+is to be the first player to make a row of three of your
+pieces - either Os or Xs.
+
++---+---+---+ Choose your move by entering a number from
+| 0 | 1 | 2 | 0-8, which is the desired position on the
++---+---+---+ board where you want to place your piece.
+| 3 | 4 | 5 |
++---+---+---+ A winning row can be horizontal, vertical;
+| 6 | 7 | 8 | or diagonal.
++---+---+---+
+
+Good luck from ruri & rubi ~!!
+************************************************************

@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClCompile Include="basic.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="TicTacToe.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic.h" />

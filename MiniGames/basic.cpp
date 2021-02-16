@@ -13,7 +13,7 @@ void displayText(string myFileName)
 
 		while (!fileToRead.eof())
 		{
-			getline(fileToRead, line, ';');
+			getline(fileToRead, line, '\n');
 			cout << line << "\n";
 
 		}
