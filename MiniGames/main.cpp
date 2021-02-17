@@ -1,6 +1,5 @@
 
 #include "main.h"
-#include "TicTacToe.h"
 
 int main()
 {
@@ -56,6 +55,12 @@ void singleMenu()
 		waitForPlayer();
 		mainMenu();
 		break;
+
+	case 1:
+		playOX(1);
+		mainMenu();
+		break;
+
 	}
 }
 
@@ -72,6 +77,11 @@ void multiMenu()
 	{
 	case 0:
 		waitForPlayer();
+		mainMenu();
+		break;
+
+	case 1:
+		playOX(2);
 		mainMenu();
 		break;
 	}

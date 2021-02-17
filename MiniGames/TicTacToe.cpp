@@ -1,14 +1,20 @@
 
 #include "TicTacToe.h"
 
+char playerPiece, compPiece, winnerPiece, player1Piece, player2Piece;
+vector<char> board(9);
+bool isGameOver;
+int currentPlayer = 0;
+
 void playOX(int playerNum)
 {
+	system("cls");
 	displayText("TicTacToe.txt");
 	waitForPlayer();
 
 	if (playerNum == 1)
 	{
-		string goFirst = askForString("Do you want to go first? (y/n) : ");
+		string goFirst = askForString("Do you want to play as X or O ?  ");
 		setGamePiece(goFirst);
 		resetBoard();
 
@@ -35,7 +41,22 @@ void playOX(int playerNum)
 	}
 	else
 	{
+		string gamePieceChoice = askForString("Player 1, do you want to play as X or O ?  ");
+		setMultiPlayerPiece(gamePieceChoice);
+		resetBoard();
 
+		isGameOver = false;
+
+		while (!isGameOver)
+		{
+			playerMove(currentPlayer);
+
+			displayBoard();
+
+			isGameOver = checkGameOver();
+
+			currentPlayer = swapPlayers(currentPlayer, 2);
+		}
 	}
 
 	waitForPlayer();
@@ -53,13 +74,13 @@ void playOX(int playerNum)
 
 void setGamePiece(string letter)
 {
-	if (letter == "y" | letter == "Y")
+	if (letter == "x" | letter == "X")
 	{
 		playerPiece = 'X';
 		compPiece = 'O';
 		currentPlayer = 0;
 
-		cout << "\n You'll be playing as X \n";
+		cout << "\n You'll go first \n";
 	}
 	else
 	{
@@ -67,14 +88,34 @@ void setGamePiece(string letter)
 		compPiece = 'X';
 		currentPlayer = 1;
 
-		cout << "\n You'll be playing as O \n";
+		cout << "\n You'll go after \n";
 	}
 }
 
 
+void setMultiPlayerPiece(string gamePieceChoice)
+{
+	if (gamePieceChoice == "x" | gamePieceChoice == "X")
+	{
+		player1Piece = 'X';
+		player2Piece = 'O';
+		currentPlayer = 0;
+
+		cout << "\n You'll go first, player 1 \n";
+	}
+	else
+	{
+		player1Piece = 'O';
+		player2Piece = 'X';
+		currentPlayer = 1;
+
+		cout << "\n You'll go after player 2 \n";
+	}
+}
+
 void resetBoard()
 {
-	for (int i = 0; i < board.size(); i++)
+	for (unsigned int i = 0; i < board.size(); i++)
 	{
 		board[i] = NULL;
 	}
@@ -110,12 +151,34 @@ bool isMoveLegal(int location)
 }
 
 
+void playerMove(int currentPlayer)
+{
+	int move;
+	do
+	{
+		cout << " Player " << currentPlayer + 1 << "'s turn~ " << endl;
+		move = askForNumber("Where will you move? (0 to 8) : ", 0, 8);
+
+	} while (!isMoveLegal(move));
+
+	if (currentPlayer == 0)
+	{
+		board[move] = player1Piece;
+	}
+	else
+	{
+		board[move] = player2Piece;
+	}
+
+}
+
+
 void humanMove()
 {
 	int move;
 	do
 	{
-		move = askForNumber("Where will you move? (0 to 8) : ");
+		move = askForNumber("Where will you move? (0 to 8) : ",0,8);
 
 	} while (!isMoveLegal(move));
 
@@ -180,7 +243,6 @@ void computerMove()
 
 bool checkGameOver()
 {
-	//char& winner = winnerPiece;
 
 	vector<char>::iterator iter;
 	string firstRow;
@@ -260,6 +322,23 @@ void gameOver(int numPlayer)
 		else
 		{
 			cout << "\n\t It's a TIE !!! (O A O)/ \n\n";
+		}
+	}
+	else
+	{
+		if (player1Piece == winnerPiece)
+		{
+			cout << "\n\t Congrats, player 1~!! ( ^ - ^ )/ You're the winner!!! \n\n";
+			cout << "\n\t Oops!player 2~ (O ^ O)/ You've lost the game...\n\n";
+		}
+		else if (player2Piece == winnerPiece)
+		{
+			cout << "\n\t Congrats, player 2~!! ( ^ - ^ )/ You're the winner!!! \n\n";
+			cout << "\n\t Oops!player 1~ (O ^ O)/ You've lost the game...\n\n";
+		}
+		else
+		{
+			cout << "\n\t It's a TIE !!! (O A O)/\n\t Good game for both of ya~ \n\n";
 		}
 	}
 
