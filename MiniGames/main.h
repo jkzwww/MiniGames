@@ -4,6 +4,7 @@
 
 #include"basic.h"
 #include "TicTacToe.h"
+#include "Hurkle.h"
 
 void mainMenu();
 void singleMenu();

@@ -1,0 +1,10 @@
+
+The HURKLE is a happy beast that lives on the planet Lirht that has 3 moons.
+Hurkles are the favourite pets of the Gwik who live on Lirht.
+
+To capture one, you must enter 2 co-ordinates,
+each from 0-9 using the XY format (X = North/South, Y = East/West).
+You will be told how accurate your aim was.
+
+You have just 5 shots to find the HURKLE!
+Good luck.
