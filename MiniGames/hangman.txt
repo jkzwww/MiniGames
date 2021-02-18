@@ -1,0 +1,16 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		HANGMAN			
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Guess the word to save the man...
+
+Start by guessing the letter in the word!
+You can guess the whole word if you're
+confident enough~
+
+You may choose a difficulty level to start
+and it will go up after you get 3 right 
+guesses unless you've chosen hard mode 
+at first.
+
+Good luck!!

@@ -65,6 +65,11 @@ void singleMenu()
 		startHurkle();
 		mainMenu();
 		break;
+
+	case 3:
+		startHangman();
+		mainMenu();
+		break;
 	}
 }
 

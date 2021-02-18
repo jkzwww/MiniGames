@@ -7,7 +7,7 @@
 
 		[1] Tic Tac Toe
 		[2] Hurkles
-		[3] Sudoku
+		[3] Hangman
 
 		[0] Back to main menu
 
