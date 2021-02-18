@@ -1,0 +1,13 @@
+ How to Play Even Minus Odd
+
+A simple game that uses 6 dice for 2 or more players using "counters" for scoring.
+The starting "counter pool" has 10-20 x the number of players counters in it.
+On your turn:
+* You roll all 6 dice.
+* Total all even numbers then subtract the odd numbers.
+* Take the resulting number of counters from the pool.
+* If the result is negative, pay that many counters to
+ the pool OR all your counters if you are short.
+You are not out of the game if you have no counters, as you may gain some on your next turn.
+The game ends when all the counters in the pool are taken.
+The winner is the player with the most counters.

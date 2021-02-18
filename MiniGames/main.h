@@ -6,6 +6,7 @@
 #include "TicTacToe.h"
 #include "Hurkle.h"
 #include "Hangman.h"
+#include "EvenMinusOdd.h"
 
 void mainMenu();
 void singleMenu();

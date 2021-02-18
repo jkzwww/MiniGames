@@ -141,6 +141,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="basic.cpp" />
+    <ClCompile Include="EvenMinusOdd.cpp" />
     <ClCompile Include="Hangman.cpp" />
     <ClCompile Include="Hurkle.cpp" />
     <ClCompile Include="main.cpp" />
@@ -148,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="basic.h" />
+    <ClInclude Include="EvenMinusOdd.h" />
     <ClInclude Include="Hangman.h" />
     <ClInclude Include="Hurkle.h" />
     <ClInclude Include="main.h" />

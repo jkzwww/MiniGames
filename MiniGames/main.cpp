@@ -93,5 +93,14 @@ void multiMenu()
 		playOX(2);
 		mainMenu();
 		break;
+
+	case 2:
+		
+		break;
+
+	case 3:
+		startEvenMinusOdd();
+		mainMenu();
+		break;
 	}
 }
