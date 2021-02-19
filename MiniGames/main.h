@@ -7,6 +7,7 @@
 #include "Hurkle.h"
 #include "Hangman.h"
 #include "EvenMinusOdd.h"
+#include "piggy.h"
 
 void mainMenu();
 void singleMenu();

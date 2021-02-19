@@ -19,21 +19,21 @@ void mainMenu()
 
 	switch (choice)
 	{
-	case 0:
+	case 1:
 		singleMenu();
 		break;
 
-	case 1:
+	case 2:
 		multiMenu();
 		break;
 
-	case 2:
+	case 3:
 		displayText("aboutUs.txt");
 		waitForPlayer();
 		mainMenu();
 		break;
 		
-	case 3:
+	case 0:
 		cout << "\nThank you for playing with ruri and rubi~! See you soon~!\n\n";
 		break;
 	}
@@ -95,7 +95,8 @@ void multiMenu()
 		break;
 
 	case 2:
-		
+		startPiggy();
+		mainMenu();
 		break;
 
 	case 3:

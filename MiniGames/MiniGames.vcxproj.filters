@@ -33,6 +33,9 @@
     <ClCompile Include="EvenMinusOdd.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="piggy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TicTacToe.h">
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EvenMinusOdd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="piggy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

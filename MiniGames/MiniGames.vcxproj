@@ -145,6 +145,7 @@
     <ClCompile Include="Hangman.cpp" />
     <ClCompile Include="Hurkle.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="piggy.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +154,7 @@
     <ClInclude Include="Hangman.h" />
     <ClInclude Include="Hurkle.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="piggy.h" />
     <ClInclude Include="TicTacToe.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

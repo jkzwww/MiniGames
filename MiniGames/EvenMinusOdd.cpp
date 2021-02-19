@@ -52,7 +52,7 @@ void playEvenMinusOdd()
 	int result = 0;
 
 	while (!isGameOver)
-	{
+	{ 
 
 		if (counterPool <= 0)
 		{
